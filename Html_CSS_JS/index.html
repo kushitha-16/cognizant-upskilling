@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Course Registration</h1>
+        <p>HTML, CSS and JavaScript Practice</p>
+    </header>
+
+    <nav>
+        <a href="#register">Register</a>
+        <a href="#students">Students</a>
+    </nav>
+
+    <section id="register" class="container">
+        <h2>Register Student</h2>
+
+        <form id="studentForm">
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter name">
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter email">
+
+            <label>Course</label>
+            <select id="course">
+                <option value="">Select Course</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="SQL">SQL</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <section id="students" class="container">
+        <h2>Registered Students</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+        <button onclick="clearData()" class="clear-btn">Clear All</button>
+    </section>
+
+    <footer>
+        <p>Created for Digital Nurture 5.0 Practice</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
