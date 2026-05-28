@@ -1,0 +1,246 @@
+/* Universal selector reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background and font */
+body {
+    background-color: #f4f8ff;
+    background-image: linear-gradient(to bottom, #f4f8ff, #ffffff);
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header styles */
+#mainHeader {
+    background: linear-gradient(to right, #003366, #007BFF);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styles */
+.nav-menu {
+    list-style-type: none;
+    list-style-position: inside;
+    margin-top: 15px;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 8px;
+}
+
+.nav-menu a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu a:visited {
+    color: #e0e0e0;
+}
+
+.nav-menu a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.nav-menu a:active {
+    color: orange;
+}
+
+/* Section styles */
+section {
+    width: 90%;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 8px #cccccc;
+}
+
+/* Element selector */
+h2 {
+    color: #003366;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+/* Grouping selector */
+h3, p {
+    margin-bottom: 10px;
+}
+
+/* Highlight class */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Event card styles */
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.eventCard {
+    width: 250px;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: #eef6ff;
+    outline: none;
+}
+
+.eventCard:hover {
+    box-shadow: 0 0 10px gray;
+}
+
+/* Button styles */
+button, .cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+td, th {
+    border: 1px solid gray;
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Image styles */
+.event-img {
+    width: 200px;
+    height: 130px;
+    border: 3px solid #007BFF;
+    border-radius: 8px;
+}
+
+/* Form styles */
+form {
+    width: 70%;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 3px solid #99ccff;
+}
+
+/* Feedback textarea */
+#feedbackText {
+    height: 120px;
+}
+
+/* Multiple column news article */
+.news-article {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    text-align: justify;
+}
+
+/* Footer styles */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Example for visibility vs display */
+.hidden-example {
+    visibility: hidden;
+}
+
+.none-example {
+    display: none;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .nav-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .event-list {
+        flex-direction: column;
+    }
+
+    .eventCard {
+        width: 100%;
+    }
+
+    .event-img {
+        width: 100%;
+        height: auto;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .news-article {
+        column-count: 1;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
